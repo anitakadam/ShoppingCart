@@ -14,7 +14,7 @@ app.service("cart", function(cartItemFactory){
 			existingItem.quantity += 1;
 		} else {
 			var cartItem = cartItemFactory.create(product);
-			this.items[product.id] = cartItem;
+			this.items.push(cartItem);
 		}
 	};
 
