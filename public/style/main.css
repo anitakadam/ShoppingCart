@@ -21,7 +21,7 @@ a {
 }
 
 .product-title{
-  font-size: 18px;
+  font-size: 16px;
   margin-bottom: 10px;
 }
 
@@ -52,11 +52,11 @@ a, a:focus, a:hover {
 .product-list li{
   display: inline-block;
   vertical-align: text-top;
-  width: 300px;
+  width: 341px;
 }
 
 .product-panel{
-  height: 250px;
+  height: 260px;
   margin-right: 10px;
   margin-bottom: 10px;
 }
