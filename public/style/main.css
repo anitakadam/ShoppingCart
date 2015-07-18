@@ -63,13 +63,9 @@ a, a:focus, a:hover {
 
 .header .mini-cart{
   float: right;
-  padding: 10px 20px;
   margin-bottom: 10px;
   display: inline-block;
   font-size: 22px;
-}
-
-.mini-cart .cart-items-count{
 }
 
 .product-detail .product-title{
@@ -105,7 +101,7 @@ a, a:focus, a:hover {
 
 .header{
   background-color: coral;
-  padding: 20px;
+  padding: 15px;
   margin-bottom: 20px;
   border-radius: 0 0 10px 10px;
 }
@@ -119,6 +115,11 @@ a, a:focus, a:hover {
 .logo{
   font-size:28px;
   color:white;
+}
+
+.search-panel{
+  position: absolute;
+  top: 10px;
 }
 
 .search{
@@ -139,6 +140,10 @@ a, a:focus, a:hover {
   border: 1px solid gray;
   margin-left: -5px;
   border-left: none;
+}
+
+.search-btn .glyphicon-search{
+  margin-right:5px;
 }
 
 .total-panel{

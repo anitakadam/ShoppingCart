@@ -1,12 +1,6 @@
 <div ng-controller="CartController as cartController">
 	<div class="header">
 		<a class="logo" href="#/">MyKart</a>
-		<span>
-			<input class="search" type="text" ng-model="query" />
-			<a class="search-btn">
-				<span class="glyphicon glyphicon-search"></span>
-					</a>
-		</span>
 		<div class="mini-cart">
 			<div ng-if="cartController.cart.getTotalItems() > 0">
 				<a ng-href="#/cart" class="glyphicon glyphicon-shopping-cart">

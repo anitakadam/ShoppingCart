@@ -1,7 +1,13 @@
 <div class="product-list">
 	<div ng-include="'views/header.html'"></div>
+	<div class="search-panel">
+		<input class="search" type="text" ng-model="shop.query" />
+		<a class="search-btn">
+				<span class="glyphicon glyphicon-search"></span>
+					</a>
+	</div>
 	<ul>
-		<li ng-repeat="product in shop.products">
+		<li ng-repeat="product in shop.products | filter : shop.query">
 			<div class="product-panel panel panel-default">
 				<div class="product-title panel-heading">
 					<a href="#/products/{{product.id}}">{{ product.name }}</a>
