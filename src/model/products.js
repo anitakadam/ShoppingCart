@@ -32,7 +32,7 @@ module.exports = [
               price : "35000"
           },
         {
-            id: "1",
+            id: "2",
             name : "Samsung Galaxy Tab E(Metallic Black, 8 GB, Wi-Fi+3G)",
             imgUrl: "http://img5a.flixcart.com/image/tablet/e/r/8/samsung-sm-t561nzkains-400x400-imae7uzycfmeudvy.jpeg",
             features: [
