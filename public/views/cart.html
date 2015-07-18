@@ -18,7 +18,9 @@
 					<a href="#/products/{{cartItem.product.id}}">{{ cartItem.product.name }}</a>
 				</div>
 				<div class="col-md-2">{{ cartItem.product.price }}</div>
-				<div class="col-md-1">{{ cartItem.quantity }}</div>
+				<div class="col-md-1">
+					<input class="quantity-field" type="text" ng-model="cartItem.quantity"/>
+				</div>
 				<div class="col-md-1">{{ cartItem.getTotal() }}</div>
 				<div class="add-to-cart-btn col-md-2">
 					<a class="btn btn-warning" ng-click="cart.remove(cartItem)">Remove</a>
@@ -26,7 +28,6 @@
 			</div>
 		</li>
 	</ul>
-	
 	<div class="total-panel row">
 		<div class="product-price total-label col-md-2 col-sm-offset-7">Total Price</div>
 		<div class="product-price col-sm-3">{{ cart.getTotalPrice() }}</div>
