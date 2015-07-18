@@ -109,7 +109,6 @@ a, a:focus, a:hover {
 .heading{
   font-size: 18px;
   border-bottom: solid 2px lightblue;
-  padding: 10px;
 }
 
 .logo{
@@ -161,4 +160,9 @@ a, a:focus, a:hover {
 
 .product-cart .quantity-field{
     width: 50px;
+    text-align: center;
+}
+
+.product-cart .amount{
+  text-align: right;
 }
