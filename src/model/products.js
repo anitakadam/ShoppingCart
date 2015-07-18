@@ -30,5 +30,21 @@ module.exports = [
               ],
               description: "The Lenovo S8-50 is a lightweight tablet, weighing only 299 grams. However, it does pack a punch in terms of performance.",
               price : "35000"
-          }
+          },
+        {
+            id: "1",
+            name : "Samsung Galaxy Tab E(Metallic Black, 8 GB, Wi-Fi+3G)",
+            imgUrl: "http://img5a.flixcart.com/image/tablet/e/r/8/samsung-sm-t561nzkains-400x400-imae7uzycfmeudvy.jpeg",
+            features: [
+                'Android v4.4 (KitKat) OS',
+                '5 MP Primary Camera',
+                '2 MP Secondary Camera',
+                '9.6 inch TFT Touchscreen',
+                '1.3 GHz Quad Core Processor',
+                'Wi-Fi Enabled',
+                'Expandable Storage Capacity of 128 GB'
+            ],
+            description: "Samsung’s GALAXY Tab E is a well-designed, high-performing tablet that maximizes performance and usage, allowing you to multi-task like a boss, since you can download office apps from the Galaxy Store.",
+            price : "16990"
+        }
      ];

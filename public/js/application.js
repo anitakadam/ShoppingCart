@@ -12,3 +12,9 @@ app.config(function ($routeProvider) {
 		templateUrl: 'views/cart.html',
 	});
 });
+
+app.filter('price', function() {
+   return function(input) {
+       return "Rs. " + input;
+   }
+});

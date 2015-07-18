@@ -9,7 +9,7 @@
 		<div class="media-body">
 			<div class="product-title media-heading">{{ product.name }}</div>
 			<div>
-				<span class="product-price">Rs.{{ product.price }}</span>
+				<span class="product-price">{{ product.price | price}}</span>
 				<span class="add-to-cart-btn" ng-controller="CartController as cartController">
 					<a class="btn btn-success btn-lg" ng-click="cartController.cart.addProduct(product)">Add to cart</a>
 				</span>
