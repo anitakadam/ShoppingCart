@@ -1,7 +1,8 @@
-var productsdata = require("./productsData.js")
-var _ = require("underscore")
+var productsdata = require("./src/model/products.js")
+var _ = require("lodash")
 
 module.exports = function(app) {
+
     app.get('/api/products', function(req, res) {
         res.json(productsdata)
     });
@@ -14,7 +15,9 @@ module.exports = function(app) {
     });
 
     app.post('/api/products', function(req, res) {
-        productsdata.products.push(req.body);
+        var product = req.body;
+        product.id = productsdata.products.length;
+        productsdata.products.push(product);
         res.json({ message: 'Product Added with id ' + req.body.id});
     });
 };
