@@ -1,5 +1,4 @@
-module.exports = {
-      products: [
+module.exports = [
           {
               id: "0",
               name : "Mi Pad(White, 16 GB, Wi-Fi Only)",
@@ -32,5 +31,4 @@ module.exports = {
               description: "The Lenovo S8-50 is a lightweight tablet, weighing only 299 grams. However, it does pack a punch in terms of performance.",
               price : "35000"
           }
-      ]
-}
+     ];

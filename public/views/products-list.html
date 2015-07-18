@@ -1,0 +1,25 @@
+<div class="product-list">
+	<div ng-include="'views/header.html'"></div>
+	<ul>
+		<li ng-repeat="product in shop.products">
+			<div class="product-panel panel panel-default">
+				<div class="product-title panel-heading">
+					<a href="#/products/{{product.id}}">{{ product.name }}</a>
+				</div>
+				<div class="panel-body">
+					<div class="product-img col col-xs-6">
+						<img ng-src="{{ product.imgUrl }}" />
+					</div>
+					<div class="col col-xs-6">
+						<p>Price: <span class="product-price">{{ product.price }}</span></p>
+						<div class="add-to-cart-btn" ng-controller="CartController as cartController">
+							<a class="btn btn-primary btn-lg" ng-click="cartController.cart.addProduct(product)">
+						Add to cart
+					</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>

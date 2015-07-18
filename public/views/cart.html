@@ -1,0 +1,34 @@
+<div class="product-cart" ng-init="cart = cartController.cart">
+	<div class="heading">
+		<span class="product-img col col-md-3"></span>
+		<span class="product-title col col-md-5">Product name</span>
+		<span class="col col-md-1">Unit price</span>
+		<span class="col col-md-1">Quantity</span>
+		<span class="product-price col col-md-1">Total</span>
+	</div>
+	<div>
+		<ul>
+			<li ng-repeat="cartItem in cart.items">
+				<span class="product-img col col-md-2">
+					<img ng-src="{{ cartItem.product.imgUrl }}" />
+				</span>
+				<span class="product-title col col-md-5">
+					<a href="#/products/{{cartItem.product.id}}">{{ cartItem.product.name }}</a>
+				</span>
+				<span class="product-price col col-md-1">{{ cartItem.product.price }}</span>
+				<span class="product-price col col-md-1">{{ cartItem.quantity }}</span>
+				<span class="product-price col col-md-1">{{ cartItem.getTotal() }}</span>
+				<span class="add-to-cart-btn col col-md-1">
+					<a class="btn btn-primary btn-lg" ng-click="cart.remove(cartItem)">Remove</a>
+				</span>
+			</li>
+		</ul>
+		<div class="total-panel">
+			<span class="product-img col col-md-3"></span>
+			<span class="product-title col col-md-5"></span>
+			<span class="col col-md-1"></span>
+			<span class="col col-md-1">Total Price: </span>
+			<span class="product-price col col-md-1">{{ cart.getTotalPrice() }}</span>
+		</div>
+	</div>
+</div>

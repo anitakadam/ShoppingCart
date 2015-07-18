@@ -1,0 +1,11 @@
+<div ng-controller="CartController as cartController">
+	<div  class="header">
+	<div class="mini-cart">
+		<div ng-if="cartController.cart.getTotalItems() > 0">
+			<a ng-href="#/cart">Items in cart: {{ cartController.cart.getTotalItems() }}</a>
+		</div>
+		<div ng-if="cartController.cart.getTotalItems() === 0">Your cart is empty!!</div>
+	</div>
+	</div>
+	<div class="clear"/>
+</div>
