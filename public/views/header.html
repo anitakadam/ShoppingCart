@@ -1,11 +1,19 @@
 <div ng-controller="CartController as cartController">
-	<div  class="header">
-	<div class="mini-cart">
-		<div ng-if="cartController.cart.getTotalItems() > 0">
-			<a ng-href="#/cart">Items in cart: {{ cartController.cart.getTotalItems() }}</a>
+	<div class="header">
+		<a class="logo" href="#/">MyKart</a>
+		<span>
+			<input class="search" type="text" ng-model="query" />
+			<a class="search-btn">
+				<span class="glyphicon glyphicon-search"></span>
+					</a>
+		</span>
+		<div class="mini-cart">
+			<div ng-if="cartController.cart.getTotalItems() > 0">
+				<a ng-href="#/cart" class="glyphicon glyphicon-shopping-cart">
+					<span class="cart-items-count">{{ cartController.cart.getTotalItems() }}</span>
+				</a>
+			</div>
+			<div ng-if="cartController.cart.getTotalItems() === 0">Your cart is empty!!</div>
 		</div>
-		<div ng-if="cartController.cart.getTotalItems() === 0">Your cart is empty!!</div>
 	</div>
-	</div>
-	<div class="clear"/>
-</div>
+	<div class="clear" /></div>

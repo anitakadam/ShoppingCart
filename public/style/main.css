@@ -1,10 +1,19 @@
 body {
-  padding: 50px;
   font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
 }
 
 a {
   color: #00B7FF;
+}
+
+.row{
+  margin-right: 0;
+  margin-left:0;
+}
+
+.main-content{
+  margin: 0 auto;
+  width: 1024px;
 }
 
 .product-img img{
@@ -21,16 +30,15 @@ a {
   font-size: 18px;
 }
 
-.product-description{
-  
-}
-
-.product-features{
-  
+.product-list .product-price{
+  display: block;
+  margin-bottom: 10px;
 }
 
 ul{
   list-style: none;
+  margin: 0px;
+  padding: 0px;
 }
 
 a{
@@ -53,16 +61,15 @@ a, a:focus, a:hover {
   margin-bottom: 10px;
 }
 
-.product-panel .panel-body{
-  margin-right: 30px;
-}
-
 .header .mini-cart{
   float: right;
-  border: 1px solid gray;
-  padding: 20px;
+  padding: 10px 20px;
   margin-bottom: 10px;
   display: inline-block;
+  font-size: 22px;
+}
+
+.mini-cart .cart-items-count{
 }
 
 .product-detail .product-title{
@@ -84,12 +91,66 @@ a, a:focus, a:hover {
 
 .product-detail ul{
   list-style: initial;
+  margin-left:20px;
 }
 
 .clear{
   clear: both;
 }
 
-.product-cart product-img img{
-  width: 80px;
+.product-cart .product-img img{
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.header{
+  background-color: coral;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 0 0 10px 10px;
+}
+
+.heading{
+  font-size: 18px;
+  border-bottom: solid 2px lightblue;
+  padding: 10px;
+}
+
+.logo{
+  font-size:28px;
+  color:white;
+}
+
+.search{
+  width: 400px;
+  line-height: 2;
+  vertical-align: baseline;
+  font-size: 18px;
+  color: slategrey;
+  padding: 0px 5px; 
+  margin-left: 180px; 
+}
+
+.search-btn{
+  font-size: 24px;
+  background-color: lightblue;
+  padding: 6px;
+  vertical-align: sub;
+  border: 1px solid gray;
+  margin-left: -5px;
+  border-left: none;
+}
+
+.total-panel{
+  border-top: solid 2px lightblue;
+  padding-top: 10px;
+}
+
+.total-panel .total-label{
+  text-align: right;
+}
+
+.product-cart .product-row{
+  border-bottom: 1px solid lightgray;
+  margin-top: 10px;
 }

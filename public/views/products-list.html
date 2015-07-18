@@ -11,9 +11,9 @@
 						<img ng-src="{{ product.imgUrl }}" />
 					</div>
 					<div class="col col-xs-6">
-						<p>Price: <span class="product-price">{{ product.price }}</span></p>
+						<span class="product-price">Rs. {{ product.price }}</span>
 						<div class="add-to-cart-btn" ng-controller="CartController as cartController">
-							<a class="btn btn-primary btn-lg" ng-click="cartController.cart.addProduct(product)">
+							<a class="btn btn-success" ng-click="cartController.cart.addProduct(product)">
 						Add to cart
 					</a>
 						</div>
