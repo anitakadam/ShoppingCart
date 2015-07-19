@@ -13,21 +13,6 @@
     </head>
     
     <body>
-        <div ng-controller="ShopController as shop">
-            <div>Items in cart: {{shop.cartItems.length}}</div>
-            <ul class="product-list">
-                <li ng-repeat="product in shop.products" class="product-list-item">
-                    <div>
-                        <img ng-src="{{product.imgUrl}}" style="width: 100px" />
-                        <div class="product-info">
-                            <div>{{ product.name }}</div>
-                            <div>{{ product.price }}</div>
-                            <button ng-click="shop.addToCart(product)">Add to cart</button>
-                        </div>
-                    </div>
-                </li>
-            </ul>
-        </div>
+        <div ng-view="content"/>
     </body>
-
 </html>
