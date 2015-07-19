@@ -7,7 +7,7 @@
 					</a>
 	</div>
 	<ul>
-		<li ng-repeat="product in shop.products | filter : shop.query">
+		<li ng-repeat="product in shop.products | filter : shop.query" class="col-sm-4 col-md-4">
 			<div class="product-panel panel panel-default">
 				<div class="product-title panel-heading">
 					<a href="#/products/{{product.id}}">{{ product.name }}</a>
