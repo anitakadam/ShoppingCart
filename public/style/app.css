@@ -1,0 +1,16 @@
+.product-list  {
+
+}
+
+.product-list-item {
+    display: inline-block;
+    width:200px;
+}
+
+.product-info{
+    display: inline-block;
+}
+
+.product-list-item img{
+    float: left;
+}
