@@ -1,31 +1,33 @@
 <!doctype html>
 <html ng-app="ShoppingCart">
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Online Shopping</title>
-    <script src="lib/angular/angular.min.js" type="text/javascript">
-    </script>
-    <script src="js/application.js" type="text/javascript">
-    </script>
-    <script src="lib/angular-route/angular-route.min.js"
-            type="text/javascript"></script>
-    <link href="style/app.css" rel="stylesheet"/>
-</head>
-<body>
-<div ng-controller="ShopController as shop">
-    <ul class="product-list">
-        <li ng-repeat="product in shop.products" class="product-list-item">
-            <div>
-                <img ng-src="{{product.imgUrl}}" style="width: 100px"/>
+    
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Online Shopping</title>
+        <script src="lib/angular/angular.min.js" type="text/javascript">
+</script>
+        <script src="js/application.js" type="text/javascript">
+</script>
+        <script src="lib/angular-route/angular-route.min.js" type="text/javascript"></script>
+        <link href="style/app.css" rel="stylesheet" />
+    </head>
+    
+    <body>
+        <div ng-controller="ShopController as shop">
+            <div>Items in cart: {{shop.cartItems.length}}</div>
+            <ul class="product-list">
+                <li ng-repeat="product in shop.products" class="product-list-item">
+                    <div>
+                        <img ng-src="{{product.imgUrl}}" style="width: 100px" />
+                        <div class="product-info">
+                            <div>{{ product.name }}</div>
+                            <div>{{ product.price }}</div>
+                            <button ng-click="shop.addToCart(product)">Add to cart</button>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </body>
 
-                <div class="product-info">
-                    <div>{{ product.name }}</div>
-                    <div>{{ product.price }}</div>
-                </div>
-            </div>
-        </li>
-    </ul>
-
-</div>
-</body>
 </html>
