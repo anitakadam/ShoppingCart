@@ -1,0 +1,24 @@
+<div>
+	<div>
+		<a href="#/cart">Items in cart: {{shop.cartItems.length}}</a>
+	</div>
+	<div>
+		Search products: <input type="text" ng-model="shop.searchText"/>
+		<select ng-model="shop.sortKey">
+			<option ng-selected="true">name</option>
+			<option>price</option>
+		</select>
+	</div>
+	<ul class="product-list">
+		<li ng-repeat="product in shop.products | filter : shop.searchText | orderBy : shop.sortKey" class="product-list-item">
+			<div>
+				<img ng-src="{{product.imgUrl}}" style="width: 100px" />
+				<div class="product-info">
+					<div>{{ product.name }}</div>
+					<div>{{ product.price | indiaCurrency }}</div>
+					<button ng-click="shop.addToCart(product)">Add to cart</button>
+				</div>
+			</div>
+		</li>
+	</ul>
+</div>
