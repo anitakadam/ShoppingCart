@@ -36,4 +36,17 @@ app.controller("CartController", function (cartService) {
     this.cartItems = cartService.cartItems;
 });
 
+app.directive("product", function () {
+    return {
+        restrict: 'AE',
+        templateUrl: "views/product.html"
+    }
+});
+
+app.filter("indiaCurrency", function() {
+    return function(input){
+        return "Rs. " + input;
+    }
+})
+
 
