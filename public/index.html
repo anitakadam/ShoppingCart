@@ -1,16 +1,18 @@
 <!doctype html>
-<html ng-app>
+<html ng-app="ShoppingCart">
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Online Shopping</title>
     <script src="lib/angular/angular.min.js" type="text/javascript">
     </script>
+    <script src="js/application.js" type="text/javascript">
+    </script>
     <script src="lib/angular-route/angular-route.min.js"
             type="text/javascript"></script>
 </head>
 <body>
-<div>
-    Hi, I am Shopping Cart {{1 + 1}}
-</div>
+    <div ng-controller="HelloController as helloController">
+        <span ng-bind="helloController.message"></span>
+    </div>
 </body>
 </html>
